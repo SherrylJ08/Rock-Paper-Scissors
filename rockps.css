@@ -1,0 +1,93 @@
+.icons button{
+                width:120px;
+                height:120px;
+                border-radius: 50%;
+                border:3px solid white;
+                font-size: 50px;
+                cursor:pointer;
+                background-color: transparent;
+                margin-right:10px;
+                transition: transform 0.3s ease;
+            }
+            .icons button:hover{
+                transform: scale(1.1);
+            }
+            .icons button:active{
+                transform: scale(1);
+            }
+
+            .js-result{
+                font-size: 30px;
+                font-weight: bold;
+            }
+            .js-move{
+                font-size: 20px;
+
+            }
+            .js-reset
+            
+            {
+                background-color: rgb(27, 112, 191);
+                color:white;
+                border:none;
+                padding:10px 15px;
+                cursor:pointer;
+            }
+            .choose-Screen{
+                display:none;
+            }
+            .image img{
+                width:200px;
+                height:200px;
+            }
+            .countdown{
+                display: none;
+            }
+            .play-again{
+                display:none;
+            }
+            .button-row{
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+            }
+            .moves {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 80px;
+            }
+            .result-video{
+                animation: moveVideo 8s linear infinite;
+            }
+
+            @keyframes moveVideo{
+
+                0%{
+                    transform: translateX(-1000px);
+                }
+
+                100%{
+                    transform: translateX(1000px);
+                }
+            }
+            .js-computer-move,
+            .js-player-move {
+                font-size: 60px; 
+            }
+            .startbutton{
+                width:200px;
+                height:50px;
+                color:aliceblue;
+                border-radius:10px;
+                border:3px solid white;
+                font-size: 20px;
+                cursor:pointer;
+                background-color: transparent;
+                margin-right:10px;
+                transition: transform 0.5s ease;
+                
+            }
+            .startbutton:hover{
+                transform: scale(1.1);
+            }
