@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock PS</title>
+        <link rel="stylesheet" href="css/rockps.css"></link>
+    </head>
+    <body style="background-color: black; color: white;">
+
+        <center>
+            <h1 style="color: rgb(79, 121, 206); font-family: Arial, sans-serif;">Rock Paper Scissors</h1>
+            <div class="Home-Page">
+                <div class="image">
+                    <img src="rcp.png">
+                </div>
+    
+                <button onclick="startGame()" style="margin-top:30px;" class="startbutton">Start Game</button>
+            </div>
+            <div class="choose-Screen">
+                <div class="icons">
+                    <br></br>
+                    <p>Choose a move</p>
+                    <button onclick="
+                    countdown('✊');">✊</button>
+
+                    <button onclick="
+                    countdown('✋');">✋</button>
+
+                    <button onclick="
+                    countdown('✌️');">✌️</button> 
+                </div>
+            </div>
+            <div class="countdown">
+                <p class="js-timer"></p>
+                <div class="timerscreen">
+                    <div class="moves">
+                        <div class="comp-section">
+                            <p>Computer</p>
+                            <span class="js-computer-move">?</span>
+                        </div>
+                        <p>VS</p>
+                        <div class="player-section">
+                            <p>You</p>
+                            <span class="js-player-move"></span>
+                        </div>
+                    </div>
+                    <video class="js-result-video result-video" width="300" loop muted style="display:none;"></video>
+                    <p class="js-move"></p>
+                    <p class="js-score"></p>
+                </div>
+               
+            </div>
+            
+            <br></br>
+            <div class="button-row">
+                <button onclick="score={wins:0, losses:0, ties:0};localStorage.removeItem('score');document.querySelector('.js-score').innerText='Wins: 0, Losses: 0, Ties: 0';" class="js-reset">Reset Score</button> 
+                <button onclick="homepage();playagain()" class="play-again">Play Again</button>
+            </div>
+            <!--
+            <button class="auto-play" onclick="autoplay()">Autoplay</button>
+        -->
+        </center>
+            
+
+        
+    <script src="java/rockps.js"></script>
+    </body>
